@@ -31,6 +31,8 @@ function getHumanChoice() {
     playerSelection = getHumanChoice();
  computerSelection = getComputerChoice();
 
+
+
     if(playerSelection === computerSelection){
         return console.log("it's a draw");
     }else if (playerSelection == 1 && computerSelection == 2){
