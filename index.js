@@ -1,11 +1,36 @@
-
 function getComputerChoice() {
 
-    const options = ['Computer: Rock', 'Computer: Paper', 'Computer: Scissors'];
+    const options = ["ROCK", "PAPER", "SCISSORS"];
     const choice = options[Math.floor(Math.random() * options.length)];
 
-   return console.log(choice)
+   return choice;
 }
-    
 
-getComputerChoice()
+
+function getHumanChoice() {
+    const question = prompt("Rock, Paper or Scissors?", "").toUpperCase();
+    if (question == "ROCK"){
+        return ("ROCK");
+    }else if (question == "PAPER"){
+        return ("PAPER");
+    } else if (question == "SCISSORS"){
+        return ("SCISSORS");
+    }else{
+        return ("IDK that one");
+    }
+}
+
+ function playRound(playerSelection, computerSelection) {
+
+
+
+
+const playerSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound()
+
+
+ 
+
+
