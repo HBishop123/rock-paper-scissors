@@ -1,11 +1,13 @@
-// rock = 1
-// scissors = 2
-// paper = 3
+
+
+let playerScore = 0;
+let computerScore = 0;
+let roundWinner = '';
 
 
 function getComputerChoice() {
 
-    const options = [1, 2, 3];
+    const options = ["ROCK", "SCISSORS", "PAPER"];
     const choice = options[Math.floor(Math.random() * options.length)];
 
    return choice;
@@ -14,12 +16,12 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     const question = prompt("Rock, Paper or Scissors?", "").toUpperCase();
-    if (question == "ROCK"){
-        return 1;
-    }else if (question == "PAPER"){
-        return 3;
-    } else if (question == "SCISSORS"){
-        return 2;
+    if (question === "ROCK"){
+        return "ROCK";
+    }else if (question === "PAPER"){
+        return "PAPER";
+    } else if (question === "SCISSORS"){
+        return "SCISSORS";
     }else{
         return console.log("IDK that one");
     }
@@ -28,37 +30,46 @@ function getHumanChoice() {
 
  function playRound(playerSelection, computerSelection) {
 
-    playerSelection = getHumanChoice();
- computerSelection = getComputerChoice();
+playerSelection = getHumanChoice();
+computerSelection = getComputerChoice();
 
 
-
-    if(playerSelection === computerSelection){
-        return console.log("it's a draw");
-    }else if (playerSelection == 1 && computerSelection == 2){
-        return console.log("You win, Rock beats Scissors");
-    }else if (playerSelection == 1 && computerSelection == 3){
-    return console.log("You lose, Paper beats Rock");
-    }else if (playerSelection == 2 && computerSelection == 1){
-        return console.log("You lose, Rock beats Scissors");
-    }else if (playerSelection == 2 && computerSelection == 3){
-        return console.log("You win, Scissors beats Paper");
-    }else if (playerSelection == 3 && computerSelection == 1){
-        return console.log("You win, Paper beats Rock");
-    }else if (playerSelection == 3 && computerSelection == 2){
-        return console.log("You lose, Scissors beats Paper");
-    }
-
+ if (playerSelection === computerSelection){
+  roundWinner = 'tie';
+}else if (
+   (playerSelection === "ROCK" && computerSelection === "SCISSORS") ||
+   (playerSelection === "SCISSORS" && computerSelection === "PAPER") ||
+   (playerSelection === "PAPER" && computerSelection === "ROCK")
+   ){
+      playerScore++;
+      roundWinner = 'player';
+}else if (
+   (computerSelection === "ROCK" && playerSelection === "SCISSORS") ||
+   (computerSelection === "SCISSORS" && playerSelection === "PAPER") ||
+   (computerSelection === "PAPER" && playerSelection === "ROCK")
+   ){
+      computerScore++;
+      roundWinner = 'computer';
+   }
+   console.log(roundWinner);
  }
 
+
+
+
+
+
+
 function game(){
- for (let i = 0; i < 5; i++){
-playRound();
-}
-}
- 
+    for (let i = 0; i < 5; i++){
+playRound()}
 
-   game()
- 
+   if (playerScore > computerScore){
+      return console.log("YOU WIN!");
+   }else if (playerScore < computerScore){
+      return console.log("YOU LOSE!")
+   }else{ return console.log("It's a tie!!")}
 
- 
+}
+
+game()
