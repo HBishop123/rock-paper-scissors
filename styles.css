@@ -73,5 +73,24 @@ padding-right: 20px;
 }
 
 .button{
-   justify-self: space-around;
+display: flex;  
+width: 100%;
+justify-content: space-around;
+margin-left: 0;
+margin-right: 0;
 }
+
+
+#PAPER{
+height: 100px;
+width: 100px;
+}
+#ROCK{
+height: 100px;
+ width: 100px;
+}
+#SCISSORS{
+height: 100px;
+width: 100px;
+}
+
