@@ -7,31 +7,27 @@
     <title>Rock Paper Scissors</title>
 
 
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 
-
-
-
-
-
-
-
-
-
-
-
-    
 </head>
 
 <body>
+
+<div id="container">
+
+<button id="ROCK">Rock</button>
+<button id="PAPER">Paper</button>
+<button id="SCISSORS">Scissors</button>
+</div>
+
+<div class="score-board">
+<p id="playerScore">Your score is currently: 0</p>
+<p id="computerScore">The oposition score is currently: 0</p>
+<p id="roundsDrawn">The number of draws is currently: 0</p>
+
+</div>
+
     
 </body>
 </html>
 
-if (computerSelection == 1){
-    return console.log("Computer chose: ROCK");
- }else if (computerSelection == 2 ){
-    return console.log("Computer chose: Scissors");
- }else if (computerSelection == 3){
-    return console.log("Computer chose: PAPER");
- }
