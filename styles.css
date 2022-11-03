@@ -71,17 +71,33 @@ body{
 }
 
 .scorebox {
-align-self: flex-start;
+display: flex;
+width: 100%;
+justify-content: space-between;
 
 }
+
 .score-board {
 display: flex;
 flex-direction: column;
 gap: 20px;
 border-style: groove;
 padding-right: 20px;
-
+height: 150px;
 }
+
+.computer-human-choice {
+display: flex;
+flex-direction: column;
+gap: 20px;
+border-style: groove;
+padding-right: 100px;
+height: 150px;
+}
+
+
+
+
 
 .button{
 display: flex;  
