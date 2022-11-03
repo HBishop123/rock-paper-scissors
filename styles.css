@@ -11,7 +11,7 @@ body{
     min-width: 1400px;
     font-size: 24px;
 }
-
+/*intro screen start */
 
 .splash {
     position: fixed;
@@ -51,12 +51,14 @@ body{
     line-height: 90vh;
     transition: all 0.5s;
 }
+/*intro screen end*/
 
 #container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 200px;
+    gap: 80px;
+   
 }
 
 .scorebox {
@@ -80,17 +82,35 @@ margin-left: 0;
 margin-right: 0;
 }
 
+.buttonbelow{
+    margin-top: 40px;
+}
+
 
 #PAPER{
-height: 100px;
-width: 100px;
+height: 200px;
+width: 200px;
+cursor: pointer;
+background-color: black;
+border: none
 }
 #ROCK{
-height: 100px;
- width: 100px;
+height: 200px;
+ width: 200px;
+ cursor: pointer;
+ background-color: black;
+ border: none
 }
 #SCISSORS{
-height: 100px;
-width: 100px;
+height: 200px;
+width: 200px;
+cursor: pointer;
+background-color: black;
+border: none
+}
+
+img{
+    height: 200px;
+    width: 200px;
 }
 
