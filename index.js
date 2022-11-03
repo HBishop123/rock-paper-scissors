@@ -65,7 +65,7 @@ reset.addEventListener('click', function(){
   roundWinner = 'tie';
   drawCount.innerHTML = 'The number of draws is currently: ' + drawScore
   humanChoice.innerHTML = 'You Chose: ' + playerSelection;
-  computerChoice.innerHTML = 'Computer Chose: ' + computerSelection
+  computerChoice.innerHTML = 'Computer Chose: ' + computerSelection;
 }else if (
    (playerSelection === "ROCK" && computerSelection === "SCISSORS") ||
    (playerSelection === "SCISSORS" && computerSelection === "PAPER") ||
@@ -75,7 +75,7 @@ reset.addEventListener('click', function(){
     roundWinner = 'player';
     playerCount.innerHTML = 'Your score is currently: ' + playerScore;
     humanChoice.innerHTML = 'You Chose: ' + playerSelection;
-    computerChoice.innerHTML = 'Computer Chose: ' + computerSelection
+    computerChoice.innerHTML = 'Computer Chose: ' + computerSelection;
 }else if (
    (computerSelection === "ROCK" && playerSelection === "SCISSORS") ||
    (computerSelection === "SCISSORS" && playerSelection === "PAPER") ||
@@ -85,7 +85,7 @@ reset.addEventListener('click', function(){
     roundWinner = 'computer';
     computerCount.innerHTML = 'The opposition score is currently: ' + computerScore;
     humanChoice.innerHTML = 'You Chose: ' + playerSelection;
-    computerChoice.innerHTML = 'Computer Chose: ' + computerSelection
+    computerChoice.innerHTML = 'Computer Chose: ' + computerSelection;
    }
 
 
