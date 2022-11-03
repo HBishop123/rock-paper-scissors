@@ -10,7 +10,16 @@ body{
     width: 100%;
     min-width: 1400px;
     font-size: 24px;
+
+    background-position: center;
+    background-image: url(img/u9SsekRX.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #465656 ;
+    
 }
+
 /*intro screen start */
 
 .splash {
@@ -113,4 +122,5 @@ img{
     height: 200px;
     width: 200px;
 }
+
 
