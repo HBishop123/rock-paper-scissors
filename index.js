@@ -83,7 +83,7 @@ reset.addEventListener('click', function(){
    ){
     computerScore++;
     roundWinner = 'computer';
-    computerCount.innerHTML = 'The opposition score is currently: ' + computerScore;
+    computerCount.innerHTML = 'The computer score is currently: ' + computerScore;
     humanChoice.innerHTML = 'You Chose: ' + playerSelection;
     computerChoice.innerHTML = 'Computer Chose: ' + computerSelection;
    }
@@ -98,8 +98,10 @@ if (playerScore === 5){
 
 function resetGame(){
 playerCount.innerHTML = "Your score is currently: 0";
-computerCount.innerHTML = "The opposition score is currently: 0";
+computerCount.innerHTML = "The computer score is currently: 0";
 drawCount.innerHTML = "The number of draws is currently: 0";
+humanChoice.innerHTML ="You Chose:"
+computerChoice.innerHTML ="Computer Chose:"
 playerScore = 0;
 computerScore = 0;
 drawScore = 0;
