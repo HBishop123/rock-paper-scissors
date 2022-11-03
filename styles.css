@@ -117,22 +117,40 @@ height: 200px;
 width: 200px;
 cursor: pointer;
 background-color: black;
-border: none
+border: none;
+transition: 0.2s all;
 }
+
 #ROCK{
 height: 200px;
  width: 200px;
  cursor: pointer;
  background-color: black;
- border: none
+ border: none;
+ transition: 0.2s all;
 }
+
 #SCISSORS{
 height: 200px;
 width: 200px;
 cursor: pointer;
 background-color: black;
-border: none
+border: none;
+transition: 0.2s all;
 }
+
+#ROCK:active {
+transform: translate(20px);
+}
+
+#SCISSORS:active {
+transform: translate(20px);
+}
+
+#PAPER:active {
+transform: translate(20px);
+}    
+
 
 img{
     height: 200px;
