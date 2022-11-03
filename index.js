@@ -15,6 +15,8 @@ const playerCount = document.querySelector('#playerScore');
 const computerCount = document.querySelector('#computerScore');
 const drawCount = document.querySelector('#roundsDrawn');
 const reset = document.querySelector('#reset')
+const humanChoice = document.querySelector('#you-chose');
+const computerChoice = document.querySelector('#computer-chose');
 
 //getting a randomised choice from the computer
 function getComputerChoice() {
@@ -62,14 +64,18 @@ reset.addEventListener('click', function(){
   drawScore++;  
   roundWinner = 'tie';
   drawCount.innerHTML = 'The number of draws is currently: ' + drawScore
+  humanChoice.innerHTML = 'You Chose: ' + playerSelection;
+  computerChoice.innerHTML = 'Computer Chose: ' + computerSelection
 }else if (
    (playerSelection === "ROCK" && computerSelection === "SCISSORS") ||
    (playerSelection === "SCISSORS" && computerSelection === "PAPER") ||
-   (playerSelection === "PAPER" && computerSelection === "ROCK")
+   (playerSelection === "PAPhumanChoice.innerHTML = 'You Chose: ' + playerSelection;ER" && computerSelection === "ROCK")
    ){
     playerScore++;
     roundWinner = 'player';
     playerCount.innerHTML = 'Your score is currently: ' + playerScore;
+    humanChoice.innerHTML = 'You Chose: ' + playerSelection;
+    computerChoice.innerHTML = 'Computer Chose: ' + computerSelection
 }else if (
    (computerSelection === "ROCK" && playerSelection === "SCISSORS") ||
    (computerSelection === "SCISSORS" && playerSelection === "PAPER") ||
@@ -78,6 +84,8 @@ reset.addEventListener('click', function(){
     computerScore++;
     roundWinner = 'computer';
     computerCount.innerHTML = 'The opposition score is currently: ' + computerScore;
+    humanChoice.innerHTML = 'You Chose: ' + playerSelection;
+    computerChoice.innerHTML = 'Computer Chose: ' + computerSelection
    }
 
 
