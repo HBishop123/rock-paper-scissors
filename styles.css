@@ -1,161 +1,151 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-    
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    width: 100%;
-    min-width: 1400px;
-    font-size: 24px;
+body {
+  width: 100%;
+  min-width: 1400px;
+  font-size: 24px;
 
-    background-position: center;
-    background-image: url(img/u9SsekRX.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #697272 ;
-    
+  background-position: center;
+  background-image: url(img/u9SsekRX.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #697272;
 }
 
 /*intro screen start */
 
 .splash {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    z-index: 200;
-    color: white;
-    text-align: center;
-    line-height: 90vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 200;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
 }
 
-@keyframes fadeIn{
-    to{
-        opacity: 1;
-    }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
-.fade-in{
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 .splash.display-none {
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    z-index: -10;
-    color: white;
-    text-align: center;
-    line-height: 90vh;
-    transition: all 0.5s;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: -10;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 0.5s;
 }
 /*intro screen end*/
 
-
 /*container of all elements, sorted vertically*/
 #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
 .scorebox {
-display: flex;
-width: 100%;
-justify-content: space-between;
-
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .score-board {
-display: flex;
-flex-direction: column;
-gap: 20px;
-border-style: groove;
-padding-right: 20px;
-height: 150px;
-padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-style: groove;
+  padding-right: 20px;
+  height: 150px;
+  padding-left: 10px;
 }
 
 .computer-human-choice {
-display: flex;
-flex-direction: column;
-gap: 20px;
-border-style: groove;
-padding-right: 100px;
-height: 150px;
-width: 420px;
-padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-style: groove;
+  padding-right: 100px;
+  height: 150px;
+  width: 420px;
+  padding-left: 10px;
 }
 
-.button{
-display: flex;  
-width: 100%;
-justify-content: space-around;
-margin-left: 0;
-margin-right: 0;
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.buttonbelow{
-    margin-top: 40px;
+.buttonbelow {
+  margin-top: 40px;
 }
 
-
-#PAPER{
-height: 200px;
-width: 200px;
-cursor: pointer;
-background-color: black;
-border: none;
-transition: 0.2s all;
+#PAPER {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  transition: 0.2s all;
 }
 
-#ROCK{
-height: 200px;
- width: 200px;
- cursor: pointer;
- background-color: black;
- border: none;
- transition: 0.2s all;
+#ROCK {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  transition: 0.2s all;
 }
 
-#SCISSORS{
-height: 200px;
-width: 200px;
-cursor: pointer;
-background-color: black;
-border: none;
-transition: 0.2s all;
+#SCISSORS {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  transition: 0.2s all;
 }
 
 #ROCK:active {
-transform: translate(20px);
+  transform: translate(20px);
 }
 
 #SCISSORS:active {
-transform: translate(20px);
+  transform: translate(20px);
 }
 
 #PAPER:active {
-transform: translate(20px);
-}    
-
-
-img{
-    height: 200px;
-    width: 200px;
+  transform: translate(20px);
 }
 
-
+img {
+  height: 200px;
+  width: 200px;
+}

@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rock Paper Scissors</title>
-<link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
 
-<script src="index.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
 
-</head>
+  <body>
+    <!--div for loading cinematic -->
+    <div class="splash">
+      <h1 class="fade-in">ROCK, PAPER, SCISSORS!</h1>
+    </div>
 
-<body>
- 
-<!--div for loading cinematic -->   
-<div class="splash">
-<h1 class="fade-in">ROCK, PAPER, SCISSORS!</h1>
-</div>
+    <div id="container">
+      <div class="scorebox">
+        <div class="score-board">
+          <p id="playerScore">Your score is currently: 0</p>
+          <p id="computerScore">The computer score is currently: 0</p>
+          <p id="roundsDrawn">The number of draws is currently: 0</p>
+        </div>
+        <div class="computer-human-choice">
+          <p id="this-round"><strong>This Round... </strong></p>
+          <p id="you-chose">You Chose:</p>
+          <p id="computer-chose">Computer Chose:</p>
+        </div>
+      </div>
 
-<div id="container">
+      <div class="button">
+        <button id="ROCK">
+          <img
+            src="img/rock.png"
+            alt="Rock in the style of Rock Paper Scissors"
+          />
+        </button>
+        <button id="PAPER">
+          <img
+            src="img/paper.png"
+            alt="Paper in the style of Rock Paper Scissors"
+          />
+        </button>
+      </div>
+      <div class="buttonbelow">
+        <button id="SCISSORS">
+          <img
+            src="img/scissors.png"
+            alt="Scissors in the style of Rock Paper Scissors"
+          />
+        </button>
+      </div>
 
-<div class="scorebox">
-<div class="score-board">
-   <p id="playerScore">Your score is currently: 0</p>
-   <p id="computerScore">The computer score is currently: 0</p>
-   <p id="roundsDrawn">The number of draws is currently: 0</p>
-</div>
-   <div class="computer-human-choice">
-   <p id="this-round"><strong>This Round...</strong></p>
-   <p id="you-chose">You Chose: </p>
-   <p id="computer-chose">Computer Chose: </p>
-</div>
-</div>
-
-
-<div class="button">
-<button id="ROCK"><img src="img/rock.png" alt="Rock in the style of Rock Paper Scissors"></button>
-<button id="PAPER"><img src="img/paper.png" alt="Paper in the style of Rock Paper Scissors"></button>
-</div>
-<div class="buttonbelow">
-<button id="SCISSORS"><img src="img/scissors.png" alt="Scissors in the style of Rock Paper Scissors"></button>
-</div>
-
-
-
-
-
-<button id="reset">Reset Game</button>
-</div>
-
-</body>
+      <button id="reset">Reset Game</button>
+    </div>
+  </body>
 </html>
-
